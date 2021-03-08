@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_launcher_background"
+                android:layout_marginLeft="10dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome,"
+                android:layout_below="@+id/ic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#34558b"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/welcome_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signup to start your new journey"
+                android:layout_below="@+id/welcome"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#34558b"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome_quote"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#34558b"
+                android:text="Username" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                app:met_floatingLabel="normal"
+                android:hint="Enter your Username"/>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#34558b"
+                android:text="Email" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_marginLeft="10dp"
+                android:background="#FF9800"
+                android:layout_below="@+id/textView1"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                app:met_floatingLabel="normal"
+                android:hint="Enter your Email"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#34558b"
+                android:text="Password" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:layout_marginLeft="10dp"
+                android:background="#FF9800"
+                android:layout_below="@+id/textView2"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                app:met_floatingLabel="normal"
+                android:hint="Enter your Password"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#34558b"
+                android:text="Mobile Number" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:background="#FF9800"
+                android:layout_below="@+id/textView3"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                app:met_floatingLabel="normal"
+                android:hint="Enter your Mobile Number"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#34558b"
+                android:text="Age" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/age"
+                android:layout_marginLeft="10dp"
+                android:background="#FF9800"
+                android:layout_below="@+id/textView4"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                app:met_floatingLabel="normal"
+                android:hint="Enter your Age"/>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#34558b"
+                android:text="Date of Birth" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_marginLeft="10dp"
+                android:background="#FF9800"
+                android:layout_below="@+id/textView5"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                app:met_floatingLabel="normal"
+                android:hint="Select your Date"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/age"
+                android:layout_toRightOf="@+id/date"
+                android:src="@drawable/calender"
+                android:id="@+id/calender"/>
+
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/date"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/im"
+                    android:layout_marginLeft="10dp"
+                    android:text="Gender"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#34558b"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="Male"
+                    android:textColor="#34558b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textColor="#34558b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/radio"
+                android:layout_marginTop="20dp"
+                android:background="#34558b"
+                android:layout_marginBottom="50dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="20dp"
+                android:text="Continue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/selected_gender"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

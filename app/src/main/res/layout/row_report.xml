@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/abnormality_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="Abnormality level:"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/stage"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Intermediate"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/abnormality_title"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Jan 1"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/cadence_title"
+            android:layout_below="@+id/abnormality_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="Cadence"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/steptime_title"
+            android:layout_below="@+id/cadence_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="Step time"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/stridetime_title"
+            android:layout_below="@+id/steptime_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stride time"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/cadence_value"
+            android:layout_below="@+id/abnormality_title"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/abnormality_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="106"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/steptime_value"
+            android:layout_below="@+id/cadence_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/abnormality_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.89"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/stridetime_value"
+            android:layout_below="@+id/steptime_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/abnormality_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.14"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_below="@+id/date"
+            android:src="@drawable/ic_menu_slideshow"/>
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/date"
+            android:src="@drawable/ic_menu_slideshow"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
